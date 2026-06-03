@@ -6,7 +6,7 @@
 <meta name="description" content="Huffman Web Design builds clean, fast websites for small businesses. Fixed pricing, one-person service, 24-hour response. Based in Broomfield, CO.">
 <title>Huffman Web Design — Websites That Grow Your Business</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%22100%22%20r%3D%2296%22%20fill%3D%22%230e0d0b%22%20stroke%3D%22%23d4af37%22%20stroke-width%3D%223%22%20stroke-opacity%3D%220.75%22%2F%3E%3Cpolygon%20points%3D%22100%2C16%20156%2C30%20184%2C78%20184%2C122%20156%2C170%20100%2C184%2044%2C170%2016%2C122%2016%2C78%2044%2C30%22%20fill%3D%22none%22%20stroke%3D%22%23d4af37%22%20stroke-width%3D%222.2%22%20stroke-opacity%3D%220.6%22%2F%3E%3Ctext%20x%3D%22100%22%20y%3D%22108%22%20font-family%3D%22Georgia%2Cserif%22%20font-style%3D%22italic%22%20font-weight%3D%22700%22%20font-size%3D%2236%22%20text-anchor%3D%22middle%22%3E%3Ctspan%20fill%3D%22%23ffffff%22%3EH%3C%2Ftspan%3E%3Ctspan%20fill%3D%22%23d4af37%22%3EW%3C%2Ftspan%3E%3Ctspan%20fill%3D%22%23ffffff%22%3ED%3C%2Ftspan%3E%3C%2Ftext%3E%3C%2Fsvg%3E">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Caveat:wght@500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600&family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
 <style>
 /* ══ RESET & ROOT ══════════════════════════════════════════ */
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
@@ -608,6 +608,142 @@ body.cursor-active .cursor-glow{opacity:1}
   .reach-overlay .rtxt{font-size:.66rem}
 }
 @media(max-width:480px){.reach-section{padding:.25rem 1.2rem 1rem}}
+
+
+/* ════ CREATIVE DIRECTIONS / STYLES PAGE ════ */
+
+/* ════ CREATIVE DIRECTIONS (Styles page) ════ */
+#page-styles{background:var(--bg)}
+.cd-head{max-width:1240px;margin:0 auto;padding:6rem 4.5rem 1.2rem}
+.cd-lead{max-width:680px;color:var(--muted);font-weight:300;font-size:1rem;line-height:1.9;margin-top:1.4rem}
+.cd-lead b{color:var(--text);font-weight:500}
+.cd-meta{display:flex;flex-wrap:wrap;gap:1.4rem 2.6rem;margin-top:2.2rem;border-top:1px solid var(--border-w);padding-top:1.6rem;max-width:680px}
+.cd-meta div{display:flex;flex-direction:column;gap:.2rem}
+.cd-meta .cm-n{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;color:var(--accent);letter-spacing:.03em;line-height:1}
+.cd-meta .cm-l{font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--dim)}
+.cd-grid{max-width:1240px;margin:0 auto;padding:1.6rem 4.5rem 2rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.5rem}
+.cd-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:transform .38s cubic-bezier(.25,.46,.45,.94),border-color .3s,box-shadow .4s}
+.cd-card:hover{transform:translateY(-5px);border-color:rgba(212,175,55,.4);box-shadow:0 28px 70px rgba(0,0,0,.55)}
+.cd-preview{position:relative;aspect-ratio:16/10;overflow:hidden;border-bottom:1px solid var(--border-w)}
+.cd-scene{position:absolute;inset:0;overflow:hidden}
+.cd-index{position:absolute;top:.6rem;left:.85rem;z-index:5;font-family:'Bebas Neue',sans-serif;font-size:.95rem;letter-spacing:.1em;color:rgba(255,255,255,.62);text-shadow:0 1px 4px rgba(0,0,0,.55)}
+.cd-info{padding:1.3rem 1.5rem 1.6rem;display:flex;flex-direction:column;gap:.65rem}
+.cd-name{font-family:'Bebas Neue',sans-serif;font-size:1.45rem;letter-spacing:.04em;color:var(--white);line-height:1}
+.cd-desc{font-size:.81rem;color:var(--muted);font-weight:300;line-height:1.72}
+.cd-desc b{color:rgba(255,255,255,.72);font-weight:500}
+.cd-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.15rem}
+.cd-tags span{font-size:.6rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);border:1px solid var(--border);border-radius:100px;padding:.26rem .68rem;background:rgba(212,175,55,.04)}
+.cd-cta{max-width:760px;margin:0 auto;text-align:center;padding:3.5rem 4.5rem 6rem}
+.cd-cta-rule{width:1px;height:64px;background:linear-gradient(to bottom,transparent,var(--border-w));margin:0 auto 2.4rem}
+.cd-cta h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,5vw,3.4rem);color:var(--white);letter-spacing:.02em;line-height:1}
+.cd-cta h2 em{font-style:normal;color:var(--accent)}
+.cd-cta p{color:var(--muted);font-weight:300;font-size:.92rem;line-height:1.85;max-width:500px;margin:1.1rem auto 2rem}
+.cd-cta-row{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+@media(max-width:768px){
+  .cd-head{padding:3rem 1.5rem 1rem}
+  .cd-grid{grid-template-columns:1fr;padding:1rem 1.5rem 2rem}
+  .cd-cta{padding:2rem 1.5rem 4rem}
+}
+/* preview scenes — each demonstrates the named style */
+.pv-min{background:#fafaf8;color:#15151a;display:flex;flex-direction:column;justify-content:center;padding:0 2rem}
+.pv-min .top{position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-between;padding:.8rem 1.3rem;font-size:.48rem;letter-spacing:.26em;text-transform:uppercase;color:#a6a4ac}
+.pv-min h4{font-size:1.7rem;font-weight:300;letter-spacing:-.02em;line-height:1;font-family:'Outfit',sans-serif}
+.pv-min .dot{width:6px;height:6px;border-radius:50%;background:#15151a;margin-top:1rem}
+.pv-brut{background:#ffd84d;display:flex;align-items:center;justify-content:center;font-family:'Archivo Black',sans-serif}
+.pv-brut .box{background:#fff;border:3px solid #000;box-shadow:7px 7px 0 #000;padding:.8rem 1rem;width:74%;transform:rotate(-1.5deg)}
+.pv-brut h4{font-size:1.35rem;line-height:.95;color:#000;text-transform:uppercase}
+.pv-brut .row{display:flex;gap:.4rem;margin-top:.6rem}
+.pv-brut .tag{font-family:'Outfit',sans-serif;font-weight:800;font-size:.5rem;border:2px solid #000;padding:.2rem .45rem;text-transform:uppercase}
+.pv-brut .t1{background:#ff5da2;color:#000}
+.pv-brut .t2{background:#5ad1ff;color:#000}
+.pv-brut .bbtn{position:absolute;bottom:.9rem;right:1rem;background:#000;color:#ffd84d;font-family:'Outfit',sans-serif;font-weight:800;font-size:.55rem;padding:.4rem .8rem;border:3px solid #000;box-shadow:4px 4px 0 #ff5da2}
+.pv-cons{background:#ece6da;font-family:'Archivo Black',sans-serif;overflow:hidden}
+.pv-cons .bar{position:absolute;width:160%;height:30px;background:#d32a1e;top:34%;left:-10%;transform:rotate(-11deg)}
+.pv-cons .blk{position:absolute;width:46px;height:46px;background:#111;right:1.1rem;top:1rem}
+.pv-cons .tri{position:absolute;width:0;height:0;border-left:22px solid transparent;border-right:22px solid transparent;border-bottom:38px solid #d32a1e;right:2.4rem;bottom:1rem;transform:rotate(14deg)}
+.pv-cons h4{position:absolute;left:1.1rem;top:.9rem;color:#111;font-size:1.4rem;line-height:.86;text-transform:uppercase;max-width:62%}
+.pv-cons .ln{position:absolute;left:1.1rem;bottom:1rem;font-family:'Outfit',sans-serif;font-weight:700;font-size:.5rem;letter-spacing:.2em;color:#d32a1e;text-transform:uppercase}
+.pv-swiss{background:#fff;color:#111;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;padding:1.1rem 1.2rem;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto 1fr;gap:.5rem .8rem}
+.pv-swiss .sline{position:absolute;top:0;bottom:0;left:50%;width:1px;background:#e6e6e6}
+.pv-swiss .sq{width:18px;height:18px;background:#e8281e}
+.pv-swiss h4{grid-column:1/3;font-size:1.5rem;font-weight:700;letter-spacing:-.03em;line-height:.95}
+.pv-swiss .c{font-size:.5rem;line-height:1.5;color:#444;font-weight:400}
+.pv-swiss .c b{display:block;font-size:.45rem;letter-spacing:.18em;text-transform:uppercase;color:#e8281e;margin-bottom:.25rem}
+.pv-edit{background:#f4f0e8;color:#1b1814;font-family:'Playfair Display',serif;display:grid;grid-template-columns:1.25fr 1fr}
+.pv-edit .l{padding:1rem .9rem;display:flex;flex-direction:column;justify-content:space-between}
+.pv-edit .kick{font-family:'Outfit',sans-serif;font-size:.46rem;letter-spacing:.26em;text-transform:uppercase;color:#9a2b25;border-bottom:1px solid #1b1814;padding-bottom:.3rem;margin-bottom:.4rem}
+.pv-edit h4{font-size:1.5rem;font-weight:700;font-style:italic;line-height:.98}
+.pv-edit .by{font-family:'Outfit',sans-serif;font-size:.45rem;letter-spacing:.14em;text-transform:uppercase;color:#7a756c;margin-top:.4rem}
+.pv-edit .r{background:linear-gradient(155deg,#9c8a6a,#5d5340);position:relative}
+.pv-edit .r::after{content:'';position:absolute;inset:0;background:radial-gradient(120% 80% at 65% 25%,rgba(255,255,255,.2),transparent 60%)}
+.pv-hand{background:#fffdf4;color:#2a2620;font-family:'Caveat',cursive;display:flex;flex-direction:column;justify-content:center;padding:0 1.4rem}
+.pv-hand::before{content:'';position:absolute;inset:.5rem;border:2px solid #2a2620;border-radius:14px 10px 16px 9px/9px 16px 10px 14px}
+.pv-hand h4{font-size:2rem;font-weight:700;line-height:.9;position:relative}
+.pv-hand .wave{width:120px;height:8px;margin-top:.2rem;position:relative}
+.pv-hand .sub{font-size:1.05rem;color:#7a6f5c;position:relative;margin-top:.2rem}
+.pv-hand .star{position:absolute;right:1.4rem;top:1rem;font-size:1.5rem;color:#e0a32e;transform:rotate(12deg)}
+.pv-retro{background:linear-gradient(165deg,#e9a13c,#d9692a);color:#3a1d0c;font-family:'Archivo Black',sans-serif;display:flex;flex-direction:column;justify-content:center;padding:0 1.4rem}
+.pv-retro .sun{position:absolute;right:-26px;top:-26px;width:90px;height:90px;border-radius:50%;background:repeating-radial-gradient(circle at 50% 50%,#f4cf6b 0 9px,#e9a13c 9px 18px)}
+.pv-retro::after{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(58,29,12,.16) 1px,transparent 1px);background-size:4px 4px;mix-blend-mode:multiply;pointer-events:none}
+.pv-retro h4{font-size:1.55rem;line-height:.9;text-transform:uppercase;position:relative;z-index:2}
+.pv-retro .rbtn{align-self:flex-start;margin-top:.8rem;font-size:.6rem;background:#3a1d0c;color:#f4cf6b;padding:.45rem .9rem;border-radius:7px;box-shadow:3px 3px 0 #7a3b1f;position:relative;z-index:2}
+.pv-flat{background:#5d7bff;display:grid;grid-template-columns:1.2fr 1fr;font-family:'Outfit',sans-serif}
+.pv-flat .l{padding:1.1rem 1.1rem;color:#fff;display:flex;flex-direction:column;justify-content:center}
+.pv-flat h4{font-size:1.4rem;font-weight:700;line-height:1}
+.pv-flat .sub{font-size:.56rem;font-weight:400;opacity:.9;margin-top:.4rem}
+.pv-flat .fbtn{align-self:flex-start;margin-top:.7rem;background:#ffd23f;color:#1d2a55;font-weight:700;font-size:.55rem;padding:.4rem .85rem;border-radius:6px}
+.pv-flat .r{background:#ff6b6b;display:flex;align-items:center;justify-content:center}
+.pv-flat .r .circ{width:46px;height:46px;border-radius:50%;background:#06d6a0;position:relative}
+.pv-flat .r .circ::after{content:'';position:absolute;width:46px;height:23px;background:#ffd23f;border-radius:0 0 46px 46px;bottom:-23px;left:0}
+.pv-bento{background:#0f1115;padding:.7rem;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,1fr);gap:.45rem;font-family:'Outfit',sans-serif}
+.pv-bento .t{border-radius:11px;padding:.5rem;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}
+.pv-bento .lab{font-size:.42rem;letter-spacing:.12em;text-transform:uppercase;opacity:.7}
+.pv-bento .big{font-family:'Bebas Neue',sans-serif;font-size:1.05rem;line-height:.9}
+.pv-bento .a{grid-column:span 2;background:#2b3445;color:#eaf0ff}
+.pv-bento .b{background:#3a2f4d;color:#efe6ff}
+.pv-bento .c{background:#2f4338;color:#e3f6ec}
+.pv-bento .d{background:#43392b;color:#f6ecdd}
+.pv-bento .e{background:#3d2b33;color:#f9e6ee}
+.pv-glass{background:linear-gradient(135deg,#6d5cff 0%,#b65cff 55%,#ff6ec4 100%);display:flex;align-items:center;justify-content:center}
+.pv-glass .g-orb{position:absolute;border-radius:50%;filter:blur(2px);opacity:.85}
+.pv-glass .o1{width:70px;height:70px;background:#ffd36e;top:-14px;left:14px}
+.pv-glass .o2{width:54px;height:54px;background:#5cf0ff;bottom:-10px;right:24px}
+.pv-glass .g-card{position:relative;z-index:2;width:74%;background:rgba(255,255,255,.16);backdrop-filter:blur(9px);-webkit-backdrop-filter:blur(9px);border:1px solid rgba(255,255,255,.45);border-radius:14px;padding:.85rem 1.05rem;box-shadow:0 8px 30px rgba(0,0,0,.18);font-family:'Outfit',sans-serif}
+.pv-glass .g-h{font-size:1.15rem;font-weight:700;color:#fff;line-height:1}
+.pv-glass .g-sub{font-size:.56rem;color:rgba(255,255,255,.82);margin-top:.3rem}
+.pv-glass .g-btn{display:inline-block;margin-top:.7rem;font-size:.55rem;font-weight:600;color:#3a2a6a;background:rgba(255,255,255,.85);border-radius:100px;padding:.35rem .85rem}
+.pv-neu{background:#e4e9f0;display:flex;flex-direction:column;justify-content:center;gap:.8rem;padding:0 1.4rem;font-family:'Outfit',sans-serif}
+.pv-neu .n-h{font-size:1.35rem;font-weight:700;color:#5a6781}
+.pv-neu .n-row{display:flex;align-items:center;gap:.7rem}
+.pv-neu .n-chip{width:34px;height:34px;border-radius:50%;background:#e4e9f0;display:flex;align-items:center;justify-content:center;color:#8a97b0;font-size:.8rem;box-shadow:-4px -4px 8px #ffffff,5px 5px 10px #b9c2d4}
+.pv-neu .n-pill{font-size:.6rem;font-weight:600;color:#6a7791;padding:.5rem 1rem;border-radius:100px;background:#e4e9f0;box-shadow:-4px -4px 8px #ffffff,5px 5px 10px #b9c2d4}
+.pv-clay{background:#e9e4ff;display:flex;align-items:center;justify-content:center;font-family:'Outfit',sans-serif}
+.pv-clay .c-blob{position:absolute;width:70px;height:70px;border-radius:42% 58% 60% 40%/45% 45% 55% 55%;background:#ffb3c7;right:18px;top:-12px;box-shadow:inset -6px -6px 12px rgba(0,0,0,.12),inset 6px 6px 12px rgba(255,255,255,.6),0 10px 22px rgba(180,120,160,.35)}
+.pv-clay .c-card{position:relative;z-index:2;width:70%;background:#a78bfa;border-radius:22px;padding:.95rem 1.05rem;box-shadow:inset -6px -6px 12px rgba(90,50,160,.4),inset 6px 6px 12px rgba(255,255,255,.45),0 12px 26px rgba(120,80,200,.35)}
+.pv-clay .c-h{font-size:1.1rem;font-weight:700;color:#fff;line-height:1}
+.pv-clay .c-btn{display:inline-block;margin-top:.65rem;font-size:.56rem;font-weight:700;color:#7c4dff;background:#fff;border-radius:100px;padding:.4rem .9rem;box-shadow:0 5px 12px rgba(120,80,200,.3)}
+.pv-max{background:#ff2e63;display:flex;flex-direction:column;justify-content:center;padding:0 1.2rem;overflow:hidden;font-family:'Archivo Black',sans-serif}
+.pv-max .m-shape{position:absolute}
+.pv-max .s1{width:80px;height:80px;border-radius:50%;background:#08d9d6;right:-18px;top:-20px}
+.pv-max .s2{width:46px;height:46px;background:#ffde22;left:-12px;bottom:-12px;border-radius:8px;transform:rotate(20deg)}
+.pv-max .s3{width:0;height:0;border-left:26px solid transparent;border-right:26px solid transparent;border-bottom:44px solid #6a2cff;right:40px;bottom:6px;transform:rotate(-12deg)}
+.pv-max .m-h{position:relative;z-index:2;font-size:1.5rem;line-height:.9;color:#fff;text-shadow:3px 3px 0 #000}
+.pv-max .m-tag{position:relative;z-index:2;margin-top:.5rem;font-family:'Outfit',sans-serif;font-weight:800;font-size:.56rem;letter-spacing:.06em;color:#ffde22;background:#000;display:inline-block;align-self:flex-start;padding:.25rem .6rem}
+.pv-memphis{background:#fdf4e3;display:flex;flex-direction:column;justify-content:center;padding:0 1.3rem;overflow:hidden;font-family:'Archivo Black',sans-serif}
+.pv-memphis .mp{position:absolute}
+.pv-memphis .s-dot{width:40px;height:40px;border-radius:50%;background:#ff5d8f;right:14px;top:10px}
+.pv-memphis .s-tri{width:0;height:0;border-left:16px solid transparent;border-right:16px solid transparent;border-bottom:28px solid #2ec4b6;left:14px;bottom:14px;transform:rotate(14deg)}
+.pv-memphis .s-ring{width:30px;height:30px;border-radius:50%;border:5px solid #ffbf00;right:60px;bottom:-8px}
+.pv-memphis .s-zig{width:46px;height:14px;right:18px;bottom:18px;background:repeating-linear-gradient(135deg,#3a86ff 0 5px,transparent 5px 10px)}
+.pv-memphis .mp-h{position:relative;z-index:2;font-size:1.45rem;line-height:.92;color:#1d1d2c}
+.pv-y2k{background:linear-gradient(160deg,#b8c6ff 0%,#dfe6ff 40%,#c0f0ff 100%);display:flex;flex-direction:column;justify-content:center;padding:0 1.3rem;font-family:'Archivo Black',sans-serif;overflow:hidden}
+.pv-y2k::after{content:'';position:absolute;inset:0;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.55) 50%,transparent 60%)}
+.pv-y2k .y-h{position:relative;z-index:2;font-size:1.55rem;line-height:.95;background:linear-gradient(180deg,#eafcff 0%,#5b8cff 45%,#1a3aa0 55%,#9fd4ff 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(1px 1px 0 rgba(255,255,255,.7))}
+.pv-y2k .y-pill{position:relative;z-index:2;align-self:flex-start;margin-top:.7rem;font-family:'Outfit',sans-serif;font-weight:700;font-size:.58rem;color:#1a3aa0;background:linear-gradient(180deg,#ffffff,#bcd4ff);border:1px solid #fff;border-radius:100px;padding:.4rem .95rem;box-shadow:0 3px 8px rgba(90,120,200,.4)}
+.pv-y2k .y-star{position:absolute;z-index:2;color:#fff;text-shadow:0 0 6px #8ab4ff}
+.pv-y2k .st1{font-size:1rem;top:10px;right:16px}
+.pv-y2k .st2{font-size:.7rem;bottom:14px;left:18px}
+
 </style>
 </head>
 <body>
@@ -629,6 +765,7 @@ body.cursor-active .cursor-glow{opacity:1}
   <a href="#" onclick="navigate('home');closeMenu();return false">Home</a>
   <a href="#" onclick="navigate('about');closeMenu();return false">About</a>
   <a href="#" onclick="navigate('work');closeMenu();return false">Work</a>
+  <a href="#" onclick="navigate('styles');closeMenu();return false">Styles</a>
   <a href="#" onclick="navigate('services');closeMenu();return false">Services</a>
   <a href="#" onclick="navigate('contact');closeMenu();return false" class="mob-cta">Get a Quote</a>
 </div>
@@ -661,6 +798,7 @@ body.cursor-active .cursor-glow{opacity:1}
     <li><a href="#" onclick="navigate('home');return false" data-page="home">Home</a></li>
     <li><a href="#" onclick="navigate('about');return false" data-page="about">About</a></li>
     <li><a href="#" onclick="navigate('work');return false" data-page="work">Work</a></li>
+    <li><a href="#" onclick="navigate('styles');return false" data-page="styles">Styles</a></li>
     <li><a href="#" onclick="navigate('services');return false" data-page="services">Services</a></li>
     <li><a href="tel:5416801269" style="color:var(--muted);font-size:.8rem;text-decoration:none;padding:.5rem 1.15rem">(541) 680-1269</a></li>
     <li><a href="#" onclick="navigate('contact');return false" class="nav-cta">Get a Quote</a></li>
@@ -890,7 +1028,11 @@ body.cursor-active .cursor-glow{opacity:1}
       <div class="work-thumb"><iframe src="https://crystal-clean-48b951.netlify.app" scrolling="no" tabindex="-1" title="Crystal Clean preview" loading="lazy"></iframe><div class="work-overlay" aria-hidden="true"><div class="work-btn">View Project</div></div></div>
       <div class="work-info"><div class="work-tags"><span class="wtag">Home Cleaning</span><span class="wtag">HTML / CSS</span><span class="wtag">Booking</span></div><div class="work-name">Crystal Clean</div><div class="work-desc">A light, welcoming site presenting service packages, a clear how-it-works section, testimonials, and a streamlined booking form.</div></div>
     </div>
-    <div class="work-card rv" style="transition-delay:.35s" onclick="navigate('contact')" role="button" tabindex="0" aria-label="Your project — get started" onkeydown="if(event.key==='Enter')navigate('contact')">
+    <div class="work-card rv" style="transition-delay:.35s" onclick="window.open('https://stirring-genie-697989.netlify.app','_blank')" role="button" tabindex="0" aria-label="Summit &amp; Stone — view live project" onkeydown="if(event.key==='Enter')window.open('https://stirring-genie-697989.netlify.app','_blank')">
+      <div class="work-thumb"><iframe src="https://stirring-genie-697989.netlify.app" scrolling="no" tabindex="-1" title="Summit &amp; Stone preview" loading="lazy"></iframe><div class="work-overlay" aria-hidden="true"><div class="work-btn">View Project</div></div></div>
+      <div class="work-info"><div class="work-tags"><span class="wtag">Landscaping</span><span class="wtag">HTML / CSS</span><span class="wtag">Design + Build</span></div><div class="work-name">Summit &amp; Stone</div><div class="work-desc">An editorial, magazine-style site for a Boulder landscape studio, with bold typography, full-bleed imagery, and a refined portfolio layout that lets the work breathe.</div></div>
+    </div>
+    <div class="work-card rv" style="transition-delay:.4s" onclick="navigate('contact')" role="button" tabindex="0" aria-label="Your project — get started" onkeydown="if(event.key==='Enter')navigate('contact')">
       <div class="work-placeholder"><div style="font-family:'Bebas Neue',sans-serif;font-size:1.2rem;color:var(--dim);letter-spacing:.12em">Your Business</div><div class="work-overlay" aria-hidden="true"><div class="work-btn">Get Started</div></div></div>
       <div class="work-info"><div class="work-tags"><span class="wtag">Your Industry</span></div><div class="work-name">Your Project Here</div><div class="work-desc">Ready to be the next project in the portfolio? Get in touch and let's build something together.</div></div>
     </div>
@@ -904,6 +1046,123 @@ body.cursor-active .cursor-glow{opacity:1}
     <ul class="footer-links" role="list">
       <li><a href="#" onclick="navigate('home');return false">Home</a></li>
       <li><a href="#" onclick="navigate('work');return false">Work</a></li>
+      <li><a href="#" onclick="navigate('services');return false">Services</a></li>
+      <li><a href="#" onclick="navigate('contact');return false">Contact</a></li>
+    </ul>
+  </footer>
+</div>
+<!-- ═══════ STYLES / CREATIVE DIRECTIONS ═══════════════════════ -->
+<div class="page" id="page-styles">
+  <div class="cd-head">
+    <div class="section-tag rv">Creative Directions</div>
+    <h1 class="section-title rv" style="margin:.4rem 0 0">Pick a style.<br><em>We build it.</em></h1>
+    <p class="cd-lead rv">These are the recognized web design styles we work in — the same language professional designers use. <b>Browse the fifteen below, point at the one that fits your brand, and that becomes the starting line for your build.</b> Each is a starting point, not a cage: most projects borrow from two. Not sure which is right? We'll help you choose on the first call.</p>
+    <div class="cd-meta rv">
+      <div><span class="cm-n">15</span><span class="cm-l">Named styles</span></div>
+      <div><span class="cm-n">1</span><span class="cm-l">Person, start to finish</span></div>
+      <div><span class="cm-n">∞</span><span class="cm-l">Revisions until it's right</span></div>
+    </div>
+  </div>
+
+  <div class="cd-grid">
+
+    <article class="cd-card rv">
+      <div class="cd-preview"><span class="cd-index">01</span><div class="cd-scene pv-min"><div class="top"><span>Studio</span><span>Menu</span></div><h4>Less, on purpose.</h4><div class="dot"></div></div></div>
+      <div class="cd-info"><div class="cd-name">Minimalism</div><p class="cd-desc">Few elements, a monochrome palette, and generous whitespace — every detail earns its place. <b>Fits fashion, photographers, architecture, and portfolios.</b></p><div class="cd-tags"><span>Whitespace</span><span>Monochrome</span><span>Intentional</span></div></div>
+    </article>
+
+    <article class="cd-card rv" style="transition-delay:.04s">
+      <div class="cd-preview"><span class="cd-index">02</span><div class="cd-scene pv-brut"><div class="box"><h4>Rules<br>are<br>optional.</h4><div class="row"><span class="tag t1">Loud</span><span class="tag t2">Raw</span></div></div><div class="bbtn">CLICK ▸</div></div></div>
+      <div class="cd-info"><div class="cd-name">Brutalism &amp; Neobrutalism</div><p class="cd-desc">Clashing colors, hard offset shadows, thick borders, and oversized type that refuses to be ignored. <b>Built for edgy brands, bold startups, and disruptive portfolios.</b></p><div class="cd-tags"><span>Hard shadows</span><span>Clashing color</span><span>Oversized type</span></div></div>
+    </article>
+
+    <article class="cd-card rv" style="transition-delay:.08s">
+      <div class="cd-preview"><span class="cd-index">03</span><div class="cd-scene pv-cons"><div class="bar"></div><div class="blk"></div><div class="tri"></div><h4>Fast.<br>Forward.</h4><div class="ln">// motion + geometry</div></div></div>
+      <div class="cd-info"><div class="cd-name">Constructivism</div><p class="cd-desc">Geometric shapes, bold sans-serif headlines, and asymmetric layouts that convey speed and motion. <b>Signals agile and innovative — ideal for tech startups.</b></p><div class="cd-tags"><span>Geometric</span><span>Asymmetry</span><span>Red + black</span></div></div>
+    </article>
+
+    <article class="cd-card rv" style="transition-delay:.12s">
+      <div class="cd-preview"><span class="cd-index">04</span><div class="cd-scene pv-swiss"><div class="sline"></div><div class="sq"></div><h4>Order. Clarity. Grid.</h4><div class="c"><b>System</b>Modular layout, every element aligned to the grid.</div><div class="c"><b>Type</b>Helvetica-class sans, big heads, small body.</div></div></div>
+      <div class="cd-info"><div class="cd-name">Swiss Style</div><p class="cd-desc">Strict modular grids, Helvetica-class type, and disciplined hierarchy. Communicates order and professionalism. <b>A fit for IT and premium product brands.</b></p><div class="cd-tags"><span>Modular grid</span><span>Helvetica</span><span>Hierarchy</span></div></div>
+    </article>
+
+    <article class="cd-card rv" style="transition-delay:.16s">
+      <div class="cd-preview"><span class="cd-index">05</span><div class="cd-scene pv-edit"><div class="l"><div><div class="kick">The Feature</div><h4>A magazine,<br>on the web.</h4></div><div class="by">Words &amp; pictures</div></div><div class="r"></div></div></div>
+      <div class="cd-info"><div class="cd-name">Editorial Style</div><p class="cd-desc">Print-inspired layouts: big decorative headlines, bold imagery, and refined small body text with decorative rules. <b>Made for magazines, blogs, and news.</b></p><div class="cd-tags"><span>Print-inspired</span><span>Type contrast</span><span>Big visuals</span></div></div>
+    </article>
+
+    <article class="cd-card rv" style="transition-delay:.2s">
+      <div class="cd-preview"><span class="cd-index">06</span><div class="cd-scene pv-hand"><span class="star">✷</span><h4>Made by hand.</h4><svg class="wave" viewBox="0 0 120 8" fill="none"><path d="M1 5 Q15 1 30 5 T60 5 T90 5 T119 5" stroke="#e0a32e" stroke-width="2.4" stroke-linecap="round"/></svg><div class="sub">sketchy, warm &amp; personal</div></div></div>
+      <div class="cd-info"><div class="cd-name">Hand-Drawn Style</div><p class="cd-desc">Handwritten type, doodles, and loose, off-grid layouts with a charming, imperfect feel. <b>Great for illustrators, cafés, and kid-focused projects.</b></p><div class="cd-tags"><span>Handwriting</span><span>Doodles</span><span>Off-grid</span></div></div>
+    </article>
+
+    <article class="cd-card rv" style="transition-delay:.24s">
+      <div class="cd-preview"><span class="cd-index">07</span><div class="cd-scene pv-retro"><div class="sun"></div><h4>Old school,<br>still cool.</h4><div class="rbtn">PLAY ►</div></div></div>
+      <div class="cd-info"><div class="cd-name">Retro</div><p class="cd-desc">Warm vintage palettes, grain and wear textures, and chunky shadowed buttons that nod to old tech. <b>Perfect for cafés, music, bars, and vintage shops.</b></p><div class="cd-tags"><span>Vintage palette</span><span>Grain texture</span><span>Nostalgia</span></div></div>
+    </article>
+
+    <article class="cd-card rv" style="transition-delay:.28s">
+      <div class="cd-preview"><span class="cd-index">08</span><div class="cd-scene pv-flat"><div class="l"><h4>Clean &amp; flat.</h4><div class="sub">No shadows. No fuss. Just clarity.</div><div class="fbtn">Get started</div></div><div class="r"><div class="circ"></div></div></div></div>
+      <div class="cd-info"><div class="cd-name">Flat</div><p class="cd-desc">Solid colors, simple geometric shapes, and zero depth effects — fast and effortlessly readable. <b>A solid choice for corporate sites, SaaS, and news portals.</b></p><div class="cd-tags"><span>Solid color</span><span>No depth</span><span>Clear hierarchy</span></div></div>
+    </article>
+
+    <article class="cd-card rv" style="transition-delay:.32s">
+      <div class="cd-preview"><span class="cd-index">09</span><div class="cd-scene pv-bento"><div class="t a"><span class="lab">Overview</span><span class="big">Box it up.</span></div><div class="t b"><span class="lab">Stat</span><span class="big">98%</span></div><div class="t c"><span class="lab">Live</span><span class="big">24/7</span></div><div class="t d"><span class="lab">Plan</span><span class="big">Pro</span></div><div class="t e"><span class="lab">Trend</span><span class="big">↗</span></div></div></div>
+      <div class="cd-info"><div class="cd-name">Bento Style</div><p class="cd-desc">Content organized into tidy rounded tiles on a tight grid — dense but harmonious. <b>Especially strong for dashboards, e-commerce, and web services.</b></p><div class="cd-tags"><span>Tile grid</span><span>Rounded blocks</span><span>Dense + tidy</span></div></div>
+    </article>
+
+    <article class="cd-card rv" style="transition-delay:.04s">
+      <div class="cd-preview"><span class="cd-index">10</span><div class="cd-scene pv-glass"><span class="g-orb o1"></span><span class="g-orb o2"></span><div class="g-card"><div class="g-h">Glass &amp; light.</div><div class="g-sub">frosted, layered, luminous</div><div class="g-btn">Explore</div></div></div></div>
+      <div class="cd-info"><div class="cd-name">Glassmorphism</div><p class="cd-desc">Frosted, semi-transparent panels with background blur layered over color, for a soft sense of depth. <b>Popular for app UIs, dashboards, and modern SaaS.</b></p><div class="cd-tags"><span>Frosted glass</span><span>Blur + depth</span><span>Translucent</span></div></div>
+    </article>
+
+    <article class="cd-card rv" style="transition-delay:.08s">
+      <div class="cd-preview"><span class="cd-index">11</span><div class="cd-scene pv-neu"><div class="n-h">Soft UI.</div><div class="n-row"><div class="n-chip">◐</div><div class="n-chip">♥</div><div class="n-pill">Press</div></div></div></div>
+      <div class="cd-info"><div class="cd-name">Neumorphism</div><p class="cd-desc">Soft, extruded shapes that share the background color, shaped only by gentle light-and-dark shadows. <b>Suits minimal product UIs and toggles-and-dials interfaces.</b></p><div class="cd-tags"><span>Soft UI</span><span>Subtle shadow</span><span>Monochrome</span></div></div>
+    </article>
+
+    <article class="cd-card rv" style="transition-delay:.12s">
+      <div class="cd-preview"><span class="cd-index">12</span><div class="cd-scene pv-clay"><div class="c-blob"></div><div class="c-card"><div class="c-h">Squishy &amp; fun.</div><div class="c-btn">Tap me</div></div></div></div>
+      <div class="cd-info"><div class="cd-name">Claymorphism</div><p class="cd-desc">Puffy, rounded 3D shapes with inner and outer shadows and bright, candy-like colors. <b>Friendly and tactile — great for apps, kids' brands, and playful products.</b></p><div class="cd-tags"><span>Puffy 3D</span><span>Rounded</span><span>Candy color</span></div></div>
+    </article>
+
+    <article class="cd-card rv" style="transition-delay:.16s">
+      <div class="cd-preview"><span class="cd-index">13</span><div class="cd-scene pv-max"><span class="m-shape s1"></span><span class="m-shape s2"></span><span class="m-shape s3"></span><div class="m-h">MORE<br>IS MORE</div><div class="m-tag">★ loud ★ busy ★ bold</div></div></div>
+      <div class="cd-info"><div class="cd-name">Maximalism</div><p class="cd-desc">Dense layouts, clashing vibrant colors, layered shapes, and big expressive type. The opposite of minimal. <b>For brands that want to feel bold and unforgettable.</b></p><div class="cd-tags"><span>Vibrant</span><span>Layered</span><span>Expressive</span></div></div>
+    </article>
+
+    <article class="cd-card rv" style="transition-delay:.2s">
+      <div class="cd-preview"><span class="cd-index">14</span><div class="cd-scene pv-memphis"><span class="mp s-dot"></span><span class="mp s-tri"></span><span class="mp s-zig"></span><span class="mp s-ring"></span><div class="mp-h">Playful<br>geometry.</div></div></div>
+      <div class="cd-info"><div class="cd-name">Memphis Style</div><p class="cd-desc">Scattered geometric shapes, squiggles, and bold primaries on a light ground — fun and energetic. <b>Lively pick for events, creative studios, and youth brands.</b></p><div class="cd-tags"><span>Geometric confetti</span><span>Bold primaries</span><span>Playful</span></div></div>
+    </article>
+
+    <article class="cd-card rv" style="transition-delay:.24s">
+      <div class="cd-preview"><span class="cd-index">15</span><div class="cd-scene pv-y2k"><span class="y-star st1">✦</span><span class="y-star st2">✦</span><div class="y-h">Y2K vibes</div><div class="y-pill">Enter ▸</div></div></div>
+      <div class="cd-info"><div class="cd-name">Y2K</div><p class="cd-desc">Glossy chrome, metallic gradients, sparkles, and bubbly type pulled from early-2000s tech. <b>A nostalgic hit for music, fashion, and Gen-Z direct-to-consumer.</b></p><div class="cd-tags"><span>Chrome + gloss</span><span>Metallic</span><span>Nostalgic</span></div></div>
+    </article>
+
+  </div>
+
+  <div class="cd-cta">
+    <div class="cd-cta-rule rv" aria-hidden="true"></div>
+    <h2 class="rv">Found your <em>style?</em></h2>
+    <p class="rv">Tell us which one caught your eye — or send a couple of sites you love — and we'll shape it into a plan and a fixed price before any work begins.</p>
+    <div class="cd-cta-row rv">
+      <a href="#" class="btn-p" onclick="navigate('contact');return false">Start a conversation</a>
+      <a href="#" class="btn-g" onclick="navigate('work');return false">See our work</a>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div>
+      <div class="footer-logo-text">Huffman <span>Web Design</span></div>
+      <div class="footer-tagline">Websites that grow your business</div>
+    </div>
+    <p class="footer-copy">© 2026 Huffman Web Design. All rights reserved.</p>
+    <ul class="footer-links" role="list">
+      <li><a href="#" onclick="navigate('home');return false">Home</a></li>
+      <li><a href="#" onclick="navigate('work');return false">Work</a></li>
+      <li><a href="#" onclick="navigate('styles');return false">Styles</a></li>
       <li><a href="#" onclick="navigate('services');return false">Services</a></li>
       <li><a href="#" onclick="navigate('contact');return false">Contact</a></li>
     </ul>
@@ -1360,8 +1619,9 @@ body.cursor-active .cursor-glow{opacity:1}
     </ul>
   </footer>
 </div>
-</main>
 
+
+</main>
 <script>
 (function(){
   "use strict";
@@ -1999,6 +2259,7 @@ body.cursor-active .cursor-glow{opacity:1}
     boot();
   }
 })();
+
 </script>
 </body>
 </html>

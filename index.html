@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Huffman Web Design builds clean, fast websites for small businesses. Fixed pricing, one-person service, 24-hour response. Based in Broomfield, CO.">
+<meta name="description" content="Huffman Web Design builds clean, fast websites for small businesses. Fixed pricing, a dedicated team, 24-hour response. Based in Broomfield, CO.">
 <title>Huffman Web Design — Websites That Grow Your Business</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%22100%22%20r%3D%2295%22%20fill%3D%22%230e0d0b%22%20stroke%3D%22%23c19a33%22%20stroke-width%3D%225%22%2F%3E%3Cpolygon%20points%3D%22100%2C22%20153%2C34%20180%2C80%20180%2C120%20153%2C166%20100%2C178%2047%2C166%2020%2C120%2020%2C80%2047%2C34%22%20fill%3D%22none%22%20stroke%3D%22%23c19a33%22%20stroke-width%3D%222.6%22%20stroke-opacity%3D%220.7%22%2F%3E%3Ctext%20x%3D%22100%22%20y%3D%22103%22%20font-family%3D%22Georgia%2C%27Times%20New%20Roman%27%2Cserif%22%20font-style%3D%22italic%22%20font-weight%3D%22700%22%20font-size%3D%2262%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22central%22%3E%3Ctspan%20fill%3D%22%23ffffff%22%3EH%3C%2Ftspan%3E%3Ctspan%20fill%3D%22%23c19a33%22%3EW%3C%2Ftspan%3E%3Ctspan%20fill%3D%22%23ffffff%22%3ED%3C%2Ftspan%3E%3C%2Ftext%3E%3C%2Fsvg%3E">
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Caveat:wght@500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600&family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Archivo+Black&family=Bebas+Neue&family=Caveat:wght@500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600&family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
 <style>
 /* ══ RESET & ROOT ══════════════════════════════════════════ */
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
@@ -28,9 +28,9 @@
   --focus-ring:rgba(193,154,51,.6);
 
   /* Component tokens */
-  --btn-primary-bg:linear-gradient(135deg,var(--accent),#a9831f);
-  --btn-primary-shadow:0 1px 2px rgba(0,0,0,.05),0 6px 20px rgba(193,154,51,.22);
-  --btn-primary-shadow-hover:0 9px 28px rgba(193,154,51,.32);
+  --btn-primary-bg:var(--accent);
+  --btn-primary-shadow:0 1px 2px rgba(0,0,0,.06),0 3px 12px rgba(0,0,0,.10);
+  --btn-primary-shadow-hover:0 6px 20px rgba(0,0,0,.16);
   --card-border:var(--border);--card-radius:14px;
 
   --radius:14px;--nav-h:76px;
@@ -43,7 +43,7 @@
 }
 
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;overflow:hidden}
+body{background:var(--bg);color:var(--text);font-family:'Space Grotesk',sans-serif;overflow:hidden}
 
 /* Skip link */
 .skip-link{
@@ -87,10 +87,8 @@ textarea:focus-visible,select:focus-visible{
 @keyframes cinIn{from{transform:translateX(-101%)}to{transform:translateX(0)}}
 @keyframes cinOut{from{transform:translateX(0)}to{transform:translateX(101%)}}
 .c-logo{
-  font-family:'Bebas Neue',sans-serif;font-size:5.5rem;letter-spacing:.45em;
-  background:linear-gradient(135deg,var(--accent) 0%,#161412 45%,var(--accent2) 65%,var(--accent) 100%);
-  background-size:200% auto;
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  font-family:'Space Grotesk',sans-serif;font-size:5.5rem;letter-spacing:.45em;
+  color:var(--accent);
   opacity:0;transform:scale(.88);
   transition:opacity .3s .28s,transform .3s .28s;
 }
@@ -105,9 +103,9 @@ nav{
 nav.scrolled{background:rgba(255,255,255,.9);backdrop-filter:blur(28px) saturate(1.4);border-bottom:1px solid var(--border-w)}
 .nav-logo{text-decoration:none;display:flex;align-items:center;gap:.8rem}
 .logo-mark{position:relative;width:40px;height:40px;flex-shrink:0}
-.nav-wordmark{font-family:'Bebas Neue',sans-serif;font-size:1.18rem;color:var(--white);letter-spacing:.14em;line-height:1}
+.nav-wordmark{font-family:'Space Grotesk',sans-serif;font-size:1.18rem;color:var(--white);letter-spacing:.14em;line-height:1}
 .nav-wordmark span{color:var(--accent)}
-.nav-sub{font-size:.58rem;color:var(--muted);letter-spacing:.18em;text-transform:uppercase;margin-top:.1rem;font-family:'Outfit',sans-serif;font-weight:400}
+.nav-sub{font-size:.58rem;color:var(--muted);letter-spacing:.18em;text-transform:uppercase;margin-top:.1rem;font-family:'Space Grotesk',sans-serif;font-weight:400}
 .nav-links{display:flex;gap:0;list-style:none;align-items:center}
 .nav-links li a{
   font-size:.8rem;font-weight:400;color:var(--muted);text-decoration:none;
@@ -136,7 +134,7 @@ nav.scrolled{background:rgba(255,255,255,.9);backdrop-filter:blur(28px) saturate
 .hamburger span{display:block;width:22px;height:1.5px;background:var(--muted);border-radius:2px;transition:all .3s}
 .mobile-menu{display:none;position:fixed;inset:0;background:rgba(255,255,255,.98);z-index:700;flex-direction:column;align-items:center;justify-content:center;gap:2.2rem}
 .mobile-menu.open{display:flex}
-.mobile-menu a{font-family:'Bebas Neue',sans-serif;font-size:2.3rem;color:var(--muted);text-decoration:none;letter-spacing:.1em;touch-action:manipulation}
+.mobile-menu a{font-family:'Space Grotesk',sans-serif;font-size:2.3rem;color:var(--muted);text-decoration:none;letter-spacing:.1em;touch-action:manipulation}
 .mobile-menu a:hover{color:var(--white)}
 .mob-cta{background:var(--accent);color:#080807!important;padding:.6rem 2rem;border-radius:5px;font-size:1.7rem!important}
 .close-menu{
@@ -158,7 +156,7 @@ nav.scrolled{background:rgba(255,255,255,.9);backdrop-filter:blur(28px) saturate
 /* ══ SHARED ═════════════════════════════════════════════════ */
 .section-tag{font-size:.7rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:.75rem;display:flex;align-items:center;gap:.65rem}
 .section-tag::before{content:'';display:block;width:28px;height:1px;background:linear-gradient(90deg,var(--accent),rgba(0,0,0,.4))}
-.section-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.4rem,5vw,4.4rem);color:var(--white);letter-spacing:.02em;line-height:1.01}
+.section-title{font-family:'Space Grotesk',sans-serif;font-size:clamp(2.4rem,5vw,4.4rem);color:var(--white);letter-spacing:.02em;line-height:1.01}
 .section-title em{font-style:normal;color:var(--accent)}
 
 .btn-p{
@@ -170,7 +168,7 @@ nav.scrolled{background:rgba(255,255,255,.9);backdrop-filter:blur(28px) saturate
   transition:box-shadow .3s,transform .2s;
   touch-action:manipulation;min-height:44px;
 }
-.btn-p::before{content:'';position:absolute;top:0;left:-100%;width:60%;height:100%;background:linear-gradient(90deg,transparent,rgba(0,0,0,.32),transparent);transform:skewX(-15deg);transition:left .55s}
+.btn-p::before{display:none}
 .btn-p:hover::before{left:160%}
 .btn-p:hover{box-shadow:var(--btn-primary-shadow-hover)}
 .btn-g{
@@ -224,9 +222,9 @@ nav.scrolled{background:rgba(255,255,255,.9);backdrop-filter:blur(28px) saturate
 .lw3{animation:lwUp .8s .82s cubic-bezier(.76,0,.24,1) forwards}
 .hero-badge{display:inline-flex;align-items:center;gap:.55rem;background:rgba(0,0,0,.05);border:1px solid var(--border-w);color:rgba(0,0,0,.7);font-size:.72rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;padding:.42rem 1.1rem;border-radius:100px;margin-bottom:2rem;animation:fadeUp .7s ease both}
 .badge-dot{width:6px;height:6px;background:#22c55e;border-radius:50%;animation:pulse 2s infinite}
-.hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(3.2rem,7vw,6.8rem);line-height:1.01;letter-spacing:.02em;color:var(--white);margin-bottom:.4rem}
+.hero-title{font-family:'Space Grotesk',sans-serif;font-size:clamp(2.7rem,5vw,5rem);line-height:1.05;letter-spacing:.02em;color:var(--white);margin-bottom:.4rem}
 .hero-title .gold-line{color:var(--accent);display:block}
-.hero-title .white-line{color:#161412;text-shadow:0 0 60px rgba(0,0,0,.1)}
+.hero-title .white-line{color:#161412}
 .hero-desc{font-size:1rem;line-height:1.85;color:var(--muted);font-weight:300;max-width:460px;margin-top:1.8rem;margin-bottom:2.6rem;opacity:0;animation:fadeUp .7s .88s ease forwards}
 .hero-actions{display:flex;gap:1rem;align-items:center;flex-wrap:wrap;opacity:0;animation:fadeUp .7s 1.14s ease forwards}
 .scroll-indicator{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.5rem;opacity:0;animation:fadeUp .7s 1.6s ease forwards;pointer-events:none}
@@ -247,7 +245,7 @@ nav.scrolled{background:rgba(255,255,255,.9);backdrop-filter:blur(28px) saturate
 .mdot.r{background:#ff5f56}.mdot.y{background:#febc2e}.mdot.g{background:#28c840}
 .murl{flex:1;background:var(--surface2);border-radius:6px;padding:.3rem .8rem;font-size:.7rem;color:var(--muted);margin-left:.5rem}
 .mcontent{background:var(--bg2);border-radius:10px;padding:1.5rem}
-.mhead{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:var(--white);margin-bottom:.65rem;letter-spacing:.05em}
+.mhead{font-family:'Space Grotesk',sans-serif;font-size:1.3rem;color:var(--white);margin-bottom:.65rem;letter-spacing:.05em}
 .mlines{display:flex;flex-direction:column;gap:.4rem;margin-bottom:1rem}
 .mline{height:7px;background:var(--surface2);border-radius:4px}
 .mline.s{width:55%}.mline.m{width:78%}
@@ -258,7 +256,7 @@ nav.scrolled{background:rgba(255,255,255,.9);backdrop-filter:blur(28px) saturate
 .mbar-row{margin-bottom:.55rem}
 .mbar-label{font-size:.6rem;color:var(--dim);margin-bottom:.22rem;display:flex;justify-content:space-between}
 .mbar-track{height:3px;background:var(--bg2);border-radius:2px;overflow:hidden}
-.mbar-fill{height:100%;border-radius:2px;background:linear-gradient(90deg,var(--accent),#161412);transform:scaleX(0);transform-origin:left;animation:barGrow 1.3s 1.5s ease forwards}
+.mbar-fill{height:100%;border-radius:2px;background:var(--accent);transform:scaleX(0);transform-origin:left;animation:barGrow 1.3s 1.5s ease forwards}
 .marquee-wrap{overflow:hidden;border-top:1px solid var(--border-w);border-bottom:1px solid var(--border-w);padding:1rem 0;background:var(--bg2)}
 .marquee-inner{display:flex;gap:3.5rem;white-space:nowrap;animation:marqueeScroll 24s linear infinite;width:max-content}
 .marquee-inner span{font-size:.68rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--dim)}
@@ -276,13 +274,13 @@ nav.scrolled{background:rgba(255,255,255,.9);backdrop-filter:blur(28px) saturate
 .diff-title{font-weight:600;font-size:.95rem;color:var(--white);margin-bottom:.5rem}
 .diff-body{font-size:.83rem;color:var(--muted);line-height:1.78;font-weight:300}
 .stats-strip{background:linear-gradient(135deg,#fbfaf6,#f3f1ea);border-top:1px solid var(--border-w);border-bottom:1px solid var(--border-w)}
-.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);max-width:1240px;margin:0 auto;padding:0 4.5rem}
+.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);max-width:1240px;margin:0 auto;padding:0 4.5rem}
 .stat-item{padding:2.8rem 2rem;text-align:center;border-right:1px solid var(--border-w);position:relative;transition:background .3s;cursor:default}
 .stat-item:last-child{border-right:none}
 .stat-item::after{content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:0;height:1px;background:linear-gradient(90deg,transparent,var(--accent),rgba(0,0,0,.5),transparent);transition:width .45s}
 .stat-item:hover::after{width:65%}
 .stat-item:hover{background:rgba(0,0,0,.015)}
-.stat-num{font-family:'Bebas Neue',sans-serif;font-size:3.2rem;letter-spacing:.04em;line-height:1;background:linear-gradient(135deg,var(--accent) 0%,#161412 60%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;position:relative;display:inline-block}
+.stat-num{font-family:'Space Grotesk',sans-serif;font-size:3.2rem;letter-spacing:.04em;line-height:1;color:var(--white);position:relative;display:inline-block}
 .stat-of{font-size:.66rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin:.35rem 0 .6rem}
 .stat-desc{font-size:.78rem;color:#5a5240;line-height:1.7;font-weight:300;max-width:150px;margin:0 auto}
 .stat-src{font-size:.57rem;color:var(--dim);margin-top:.6rem;opacity:.6}
@@ -296,7 +294,7 @@ nav.scrolled{background:rgba(255,255,255,.9);backdrop-filter:blur(28px) saturate
 /* ══ ABOUT ══════════════════════════════════════════════════ */
 #page-about{background:var(--bg)}
 .about-hero{padding:6rem 4.5rem 4rem;display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center;max-width:1240px;margin:0 auto}
-.about-tagline{font-family:'Cormorant Garamond',serif;font-size:clamp(1.9rem,3.8vw,3rem);font-weight:300;line-height:1.32;color:var(--white);font-style:italic;margin:1.5rem 0}
+.about-tagline{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.9rem,3.8vw,3rem);font-weight:300;line-height:1.32;color:var(--white);margin:1.5rem 0}
 .about-tagline strong{font-style:normal;font-weight:600;color:var(--accent)}
 .about-body{font-size:.95rem;line-height:1.88;color:var(--muted);font-weight:300;margin-bottom:1.5rem}
 .about-card{background:var(--surface);border:1px solid var(--border-w);border-radius:22px;padding:2.6rem;position:relative;overflow:hidden;box-shadow:0 24px 56px rgba(0,0,0,.08)}
@@ -305,7 +303,7 @@ nav.scrolled{background:rgba(255,255,255,.9);backdrop-filter:blur(28px) saturate
 .about-stats{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;margin-top:1.4rem}
 .about-stat-box{background:var(--bg2);border:1px solid var(--border-w);border-radius:12px;padding:1.3rem;text-align:center;transition:border-color .3s,transform .3s;cursor:default}
 .about-stat-box:hover{border-color:rgba(0,0,0,.15);transform:translateY(-3px)}
-.about-stat-n{font-family:'Bebas Neue',sans-serif;font-size:2.5rem;line-height:1;background:linear-gradient(135deg,var(--accent),#161412);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.about-stat-n{font-family:'Space Grotesk',sans-serif;font-size:2.5rem;line-height:1;color:var(--white)}
 .about-stat-l{font-size:.7rem;color:var(--muted);margin-top:.35rem;line-height:1.45}
 .story-timeline{padding:4rem 4.5rem;max-width:1240px;margin:0 auto}
 .timeline{position:relative;padding-left:2rem}
@@ -314,13 +312,13 @@ nav.scrolled{background:rgba(255,255,255,.9);backdrop-filter:blur(28px) saturate
 .tl-item.on{opacity:1;transform:translateX(0)}
 .tl-dot{position:absolute;left:-6px;top:4px;width:13px;height:13px;border-radius:50%;background:var(--accent);border:2px solid var(--bg);box-shadow:0 0 14px rgba(212,175,55,.45)}
 .tl-label{font-size:.67rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:.45rem}
-.tl-title{font-family:'Bebas Neue',sans-serif;font-size:1.65rem;color:var(--white);letter-spacing:.04em;margin-bottom:.55rem}
+.tl-title{font-family:'Space Grotesk',sans-serif;font-size:1.65rem;color:var(--white);letter-spacing:.04em;margin-bottom:.55rem}
 .tl-body{font-size:.88rem;color:var(--muted);line-height:1.8;font-weight:300;max-width:540px}
 .process-section{padding:2rem 4.5rem 6rem;max-width:1240px;margin:0 auto}
 .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border-w);margin-top:2.5rem;border-radius:var(--radius);overflow:hidden}
 .process-step{background:var(--surface);padding:2rem 1.5rem;position:relative;transition:background .3s}
 .process-step:hover{background:var(--surface2)}
-.process-num{font-family:'Bebas Neue',sans-serif;font-size:3rem;line-height:1;background:linear-gradient(135deg,rgba(212,175,55,.18),rgba(0,0,0,.06));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:1rem}
+.process-num{font-family:'Space Grotesk',sans-serif;font-size:3rem;line-height:1;color:rgba(0,0,0,.07);margin-bottom:1rem}
 .process-title{font-weight:600;font-size:.9rem;color:var(--white);margin-bottom:.55rem}
 .process-body{font-size:.8rem;color:var(--muted);line-height:1.75;font-weight:300}
 
@@ -360,9 +358,9 @@ nav.scrolled{background:rgba(255,255,255,.9);backdrop-filter:blur(28px) saturate
 .plan-badge.purp{background:linear-gradient(135deg,#a855f7,#7c3aed);color:#fff}
 .plan-name{font-weight:600;font-size:1.05rem;color:var(--white);margin-bottom:.65rem;letter-spacing:.01em}
 .plan-desc{font-size:.85rem;color:var(--muted);line-height:1.75;margin-bottom:1.3rem;font-weight:300}
-.plan-price{font-family:'Bebas Neue',sans-serif;font-size:1.9rem;letter-spacing:.05em;background:linear-gradient(135deg,var(--accent),#e8c84a);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.plan-price.pp{background:linear-gradient(135deg,#c084fc,#a855f7);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.plan-price span{font-family:'Outfit',sans-serif;font-size:.76rem;font-weight:400;color:var(--dim);margin-left:.35rem;-webkit-text-fill-color:var(--dim)}
+.plan-price{font-family:'Space Grotesk',sans-serif;font-size:1.9rem;letter-spacing:.05em;color:var(--accent)}
+.plan-price.pp{color:#8b5cf6}
+.plan-price span{font-family:'Space Grotesk',sans-serif;font-size:.76rem;font-weight:400;color:var(--dim);margin-left:.35rem;-webkit-text-fill-color:var(--dim)}
 .plan-features{list-style:none;margin-top:1.3rem;display:flex;flex-direction:column;gap:.5rem}
 .plan-features li{font-size:.82rem;color:var(--muted);display:flex;align-items:flex-start;gap:.5rem;line-height:1.5}
 .plan-features li::before{content:'✓';color:var(--accent);font-size:.7rem;font-weight:700;margin-top:.1rem;flex-shrink:0}
@@ -411,7 +409,7 @@ input,textarea,select{
   background:rgba(0,0,0,.04);
   border:1px solid rgba(0,0,0,.09);
   border-radius:6px;padding:.85rem 1.05rem;
-  font-family:'Outfit',sans-serif;font-size:.88rem;color:var(--text);
+  font-family:'Space Grotesk',sans-serif;font-size:.88rem;color:var(--text);
   outline:none;width:100%;
   transition:border-color .25s,background .25s;
   touch-action:manipulation;
@@ -425,17 +423,17 @@ textarea{resize:vertical;min-height:110px}
 select option{background:#ffffff;color:#211e19}
 .form-submit{
   background:var(--btn-primary-bg);color:#060504;
-  font-family:'Outfit',sans-serif;font-size:.9rem;font-weight:700;
+  font-family:'Space Grotesk',sans-serif;font-size:.9rem;font-weight:700;
   padding:.95rem 2rem;border-radius:6px;border:none;cursor:pointer;width:100%;
   position:relative;overflow:hidden;letter-spacing:.04em;
-  box-shadow:0 0 40px rgba(212,175,55,.14);
+  box-shadow:0 1px 2px rgba(0,0,0,.06),0 3px 12px rgba(0,0,0,.10);
   transition:box-shadow .3s,opacity .25s;
   touch-action:manipulation;min-height:48px;
   display:flex;align-items:center;justify-content:center;gap:.6rem;
 }
-.form-submit::before{content:'';position:absolute;top:0;left:-100%;width:60%;height:100%;background:linear-gradient(90deg,transparent,rgba(0,0,0,.28),transparent);transform:skewX(-15deg);transition:left .55s}
+.form-submit::before{display:none}
 .form-submit:not(:disabled):hover::before{left:160%}
-.form-submit:not(:disabled):hover{box-shadow:0 10px 48px rgba(212,175,55,.3)}
+.form-submit:not(:disabled):hover{box-shadow:0 6px 20px rgba(0,0,0,.16)}
 .form-submit:disabled{opacity:.6;cursor:not-allowed}
 .form-submit .spinner{width:18px;height:18px;border:2px solid rgba(0,0,0,.25);border-top-color:#060504;border-radius:50%;animation:spin .7s linear infinite;display:none;flex-shrink:0}
 .form-submit.loading .spinner{display:block}
@@ -444,12 +442,12 @@ select option{background:#ffffff;color:#211e19}
 .form-success.visible{display:flex}
 .success-icon{width:60px;height:60px;border-radius:50%;background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.3);display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem}
 .success-icon svg{width:28px;height:28px;stroke:#22c55e;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:24;stroke-dashoffset:24;animation:checkIn .5s .2s ease forwards}
-.success-title{font-family:'Bebas Neue',sans-serif;font-size:2.2rem;color:var(--white);letter-spacing:.04em;margin-bottom:.6rem}
+.success-title{font-family:'Space Grotesk',sans-serif;font-size:2.2rem;color:var(--white);letter-spacing:.04em;margin-bottom:.6rem}
 .success-body{font-size:.9rem;color:var(--muted);line-height:1.75;max-width:380px}
 
 /* ══ FOOTER ═════════════════════════════════════════════════ */
 .site-footer{padding:2.5rem 4.5rem;border-top:1px solid var(--border-w);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;position:relative;z-index:5}
-.footer-logo-text{font-family:'Bebas Neue',sans-serif;font-size:1rem;color:var(--white);letter-spacing:.14em}
+.footer-logo-text{font-family:'Space Grotesk',sans-serif;font-size:1rem;color:var(--white);letter-spacing:.14em}
 .footer-logo-text span{color:var(--accent)}
 .footer-tagline{font-size:.68rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:rgba(0,0,0,.2)}
 .footer-copy{font-size:.76rem;color:var(--dim)}
@@ -492,7 +490,7 @@ select option{background:#ffffff;color:#211e19}
 }
 
 /* ── Contact page styles ── */
-.contact-headline{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.6rem,5.5vw,4.6rem);color:var(--white);letter-spacing:.02em;line-height:1.02;margin:.5rem 0 1.4rem}
+.contact-headline{font-family:'Space Grotesk',sans-serif;font-size:clamp(2.6rem,5.5vw,4.6rem);color:var(--white);letter-spacing:.02em;line-height:1.02;margin:.5rem 0 1.4rem}
 .contact-headline em{font-style:normal;color:var(--accent)}
 .contact-hero{padding:6rem 4.5rem 3rem;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;max-width:1240px;margin:0 auto}
 .contact-promise{font-size:.96rem;color:rgba(0,0,0,.5);line-height:1.78;max-width:400px;font-weight:300;margin-bottom:2rem}
@@ -510,7 +508,7 @@ a.cinfo-item:hover{background:rgba(0,0,0,.04);border-color:rgba(0,0,0,.1)}
 .expect-label{font-size:.62rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:rgba(0,0,0,.25);margin-bottom:1.2rem}
 .expect-steps{display:flex;flex-direction:column;gap:.9rem}
 .expect-step{display:flex;align-items:flex-start;gap:.85rem}
-.expect-num{width:26px;height:26px;border-radius:50%;flex-shrink:0;background:rgba(212,175,55,.1);border:1px solid rgba(212,175,55,.25);display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:.9rem;color:var(--accent);letter-spacing:.04em;margin-top:.1rem}
+.expect-num{width:26px;height:26px;border-radius:50%;flex-shrink:0;background:rgba(212,175,55,.1);border:1px solid rgba(212,175,55,.25);display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-size:.9rem;color:var(--accent);letter-spacing:.04em;margin-top:.1rem}
 .expect-text{font-size:.84rem;color:var(--muted);line-height:1.65;font-weight:300}
 .expect-text strong{color:rgba(0,0,0,.7);font-weight:500}
 .form-section-label{font-size:.7rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:rgba(0,0,0,.22);margin-bottom:2rem;display:flex;align-items:center;gap:.8rem}
@@ -526,7 +524,7 @@ select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/
 .faq-list{display:flex;flex-direction:column;gap:.6rem}
 .faq-item{border:1px solid rgba(0,0,0,.07);border-radius:10px;overflow:hidden;background:rgba(0,0,0,.02);transition:border-color .25s}
 .faq-item.open{border-color:rgba(212,175,55,.2);background:rgba(212,175,55,.03)}
-.faq-q{width:100%;text-align:left;padding:1.1rem 1.3rem;background:none;border:none;cursor:pointer;font-family:'Outfit',sans-serif;font-size:.9rem;font-weight:500;color:rgba(0,0,0,.7);display:flex;justify-content:space-between;align-items:center;gap:1rem;transition:color .25s;touch-action:manipulation;min-height:52px}
+.faq-q{width:100%;text-align:left;padding:1.1rem 1.3rem;background:none;border:none;cursor:pointer;font-family:'Space Grotesk',sans-serif;font-size:.9rem;font-weight:500;color:rgba(0,0,0,.7);display:flex;justify-content:space-between;align-items:center;gap:1rem;transition:color .25s;touch-action:manipulation;min-height:52px}
 .faq-item.open .faq-q,.faq-q:hover{color:#161412}
 .faq-chevron{width:16px;height:16px;flex-shrink:0;stroke:var(--muted);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .3s,stroke .25s}
 .faq-item.open .faq-chevron{transform:rotate(180deg);stroke:var(--accent)}
@@ -542,9 +540,9 @@ select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/
 .aurora-blob.a{width:480px;height:480px;background:radial-gradient(circle,rgba(212,175,55,.30),transparent 70%);top:-8%;left:8%}
 .aurora-blob.b{width:420px;height:420px;background:radial-gradient(circle,rgba(240,208,96,.16),transparent 70%);bottom:-12%;right:6%}
 .aurora-blob.c{width:360px;height:360px;background:radial-gradient(circle,rgba(0,0,0,.07),transparent 70%);top:30%;left:42%}
-.cursor-glow{position:fixed;top:0;left:0;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(212,175,55,.10) 0%,rgba(212,175,55,.04) 35%,transparent 70%);transform:translate(-50%,-50%);pointer-events:none;z-index:600;opacity:0;transition:opacity .4s;mix-blend-mode:screen;will-change:transform}
+.cursor-glow{position:fixed;top:0;left:0;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(212,175,55,.10) 0%,rgba(212,175,55,.04) 35%,transparent 70%);transform:translate(-50%,-50%);pointer-events:none;z-index:600;opacity:0;transition:opacity .4s;mix-blend-mode:screen;will-change:transform;display:none}
 body.cursor-active .cursor-glow{opacity:1}
-.hero-title .shimmer{background:linear-gradient(110deg,#161412 0%,#161412 40%,var(--gold2) 50%,#161412 60%,#161412 100%);background-size:220% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:lwUp .8s .82s cubic-bezier(.76,0,.24,1) forwards, titleShine 5.5s ease-in-out 1.6s infinite}
+.hero-title .shimmer{color:#161412}
 @keyframes titleShine{0%{background-position:160% center}55%,100%{background-position:-60% center}}
 .section-title.drawn{position:relative}
 .hcard-main{transition:transform .5s cubic-bezier(.22,.61,.36,1)}
@@ -557,19 +555,19 @@ body.cursor-active .cursor-glow{opacity:1}
 .est-shell::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold) 40%,#161412 60%,transparent)}
 .est-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:0}
 .est-build{padding:2.6rem 2.6rem 2.2rem;border-right:1px solid var(--border-w)}
-.est-head{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;color:#161412;letter-spacing:.04em;margin-bottom:.3rem}
+.est-head{font-family:'Space Grotesk',sans-serif;font-size:1.7rem;color:#161412;letter-spacing:.04em;margin-bottom:.3rem}
 .est-sub{font-size:.82rem;color:var(--muted);font-weight:300;margin-bottom:1.8rem;line-height:1.6}
 .est-row{margin-bottom:1.5rem}
 .est-label{font-size:.62rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:.7rem;display:block}
 .est-opts{display:flex;flex-wrap:wrap;gap:.55rem}
-.est-chip{border:1px solid rgba(0,0,0,.1);background:rgba(0,0,0,.02);color:rgba(0,0,0,.6);font-size:.8rem;font-family:'Outfit',sans-serif;padding:.62rem 1.1rem;border-radius:8px;cursor:pointer;transition:border-color .25s,background .25s,color .25s,transform .15s;touch-action:manipulation;user-select:none}
+.est-chip{border:1px solid rgba(0,0,0,.1);background:rgba(0,0,0,.02);color:rgba(0,0,0,.6);font-size:.8rem;font-family:'Space Grotesk',sans-serif;padding:.62rem 1.1rem;border-radius:8px;cursor:pointer;transition:border-color .25s,background .25s,color .25s,transform .15s;touch-action:manipulation;user-select:none}
 .est-chip:hover{border-color:rgba(212,175,55,.4);color:#161412}
 .est-chip:active{transform:scale(.96)}
 .est-chip.sel{border-color:var(--gold);background:rgba(212,175,55,.12);color:#161412;box-shadow:0 0 24px rgba(212,175,55,.14)}
 .est-toggle{display:flex;align-items:center;gap:.75rem;flex-wrap:wrap}
 .est-summary{padding:2.6rem 2.2rem;display:flex;flex-direction:column;justify-content:center;background:radial-gradient(120% 80% at 80% 0%,rgba(212,175,55,.08),transparent 60%)}
 .est-sum-label{font-size:.6rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:rgba(0,0,0,.3);margin-bottom:.5rem}
-.est-price{font-family:'Bebas Neue',sans-serif;font-size:4.4rem;line-height:.9;letter-spacing:.02em;background:linear-gradient(135deg,var(--gold),#161412 70%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:.2rem}
+.est-price{font-family:'Space Grotesk',sans-serif;font-size:4.4rem;line-height:.9;letter-spacing:.02em;color:var(--accent);margin-bottom:.2rem}
 .est-price-note{font-size:.74rem;color:var(--muted);font-weight:300;margin-bottom:1.4rem}
 .est-monthly{font-size:.82rem;color:rgba(0,0,0,.55);margin-bottom:1.6rem;font-weight:300}
 .est-monthly b{color:var(--gold);font-weight:600}
@@ -588,7 +586,7 @@ body.cursor-active .cursor-glow{opacity:1}
 /* ════ NATIONWIDE SIGNAL MAP ════ */
 .reach-section{max-width:1240px;margin:0 auto;padding:.5rem 4.5rem 1.5rem}
 .reach-head{max-width:640px;margin-bottom:1.6rem}
-.reach-head h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(1.9rem,4.2vw,3.1rem);color:#161412;letter-spacing:.02em;line-height:1.02;margin:.5rem 0 .7rem}
+.reach-head h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.9rem,4.2vw,3.1rem);color:#161412;letter-spacing:.02em;line-height:1.02;margin:.5rem 0 .7rem}
 .reach-head h2 em{font-style:normal;color:var(--accent)}
 .reach-head p{font-size:.9rem;color:var(--muted);font-weight:300;line-height:1.8}
 .reach-stage{position:relative;border:1px solid var(--border);border-radius:18px;overflow:hidden;background:radial-gradient(120% 90% at 50% 0%,rgba(212,175,55,.07),transparent 55%),linear-gradient(160deg,rgba(18,17,9,.92),rgba(8,8,7,.92));box-shadow:0 24px 60px rgba(0,0,0,.14),inset 0 1px 0 rgba(255,255,255,.06)}
@@ -620,23 +618,23 @@ body.cursor-active .cursor-glow{opacity:1}
 .cd-lead b{color:var(--text);font-weight:500}
 .cd-meta{display:flex;flex-wrap:wrap;gap:1.4rem 2.6rem;margin-top:2.2rem;border-top:1px solid var(--border-w);padding-top:1.6rem;max-width:680px}
 .cd-meta div{display:flex;flex-direction:column;gap:.2rem}
-.cd-meta .cm-n{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;color:var(--accent);letter-spacing:.03em;line-height:1}
+.cd-meta .cm-n{font-family:'Space Grotesk',sans-serif;font-size:1.7rem;color:var(--accent);letter-spacing:.03em;line-height:1}
 .cd-meta .cm-l{font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--dim)}
 .cd-grid{max-width:1240px;margin:0 auto;padding:1.6rem 4.5rem 2rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.5rem}
 .cd-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:transform .38s cubic-bezier(.25,.46,.45,.94),border-color .3s,box-shadow .4s}
 .cd-card:hover{transform:translateY(-5px);border-color:rgba(212,175,55,.4);box-shadow:0 18px 44px rgba(0,0,0,.12)}
 .cd-preview{position:relative;aspect-ratio:16/10;overflow:hidden;border-bottom:1px solid var(--border-w)}
 .cd-scene{position:absolute;inset:0;overflow:hidden}
-.cd-index{position:absolute;top:.6rem;left:.85rem;z-index:5;font-family:'Bebas Neue',sans-serif;font-size:.95rem;letter-spacing:.1em;color:rgba(255,255,255,.92);text-shadow:0 1px 4px rgba(0,0,0,.55)}
+.cd-index{position:absolute;top:.6rem;left:.85rem;z-index:5;font-family:'Space Grotesk',sans-serif;font-size:.95rem;letter-spacing:.1em;color:rgba(255,255,255,.92);text-shadow:0 1px 4px rgba(0,0,0,.55)}
 .cd-info{padding:1.3rem 1.5rem 1.6rem;display:flex;flex-direction:column;gap:.65rem}
-.cd-name{font-family:'Bebas Neue',sans-serif;font-size:1.45rem;letter-spacing:.04em;color:var(--white);line-height:1}
+.cd-name{font-family:'Space Grotesk',sans-serif;font-size:1.45rem;letter-spacing:.04em;color:var(--white);line-height:1}
 .cd-desc{font-size:.81rem;color:var(--muted);font-weight:300;line-height:1.72}
 .cd-desc b{color:rgba(0,0,0,.72);font-weight:500}
 .cd-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.15rem}
 .cd-tags span{font-size:.6rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);border:1px solid var(--border);border-radius:100px;padding:.26rem .68rem;background:rgba(212,175,55,.04)}
 .cd-cta{max-width:760px;margin:0 auto;text-align:center;padding:3.5rem 4.5rem 6rem}
 .cd-cta-rule{width:1px;height:64px;background:linear-gradient(to bottom,transparent,var(--border-w));margin:0 auto 2.4rem}
-.cd-cta h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,5vw,3.4rem);color:var(--white);letter-spacing:.02em;line-height:1}
+.cd-cta h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(2rem,5vw,3.4rem);color:var(--white);letter-spacing:.02em;line-height:1}
 .cd-cta h2 em{font-style:normal;color:var(--accent)}
 .cd-cta p{color:var(--muted);font-weight:300;font-size:.92rem;line-height:1.85;max-width:500px;margin:1.1rem auto 2rem}
 .cd-cta-row{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
@@ -745,6 +743,7 @@ body.cursor-active .cursor-glow{opacity:1}
 .pv-y2k .st1{font-size:1rem;top:10px;right:16px}
 .pv-y2k .st2{font-size:.7rem;bottom:14px;left:18px}
 
+.hero-title,.section-title,.contact-headline,.nav-wordmark,.footer-logo-text,.stat-num,.about-stat-n,.plan-price,.est-head,.est-price,.tl-title,.cd-name,.cd-cta h2,.reach-head h2,.success-title,.mhead,.cd-meta .cm-n,.process-num,.plan-price.pp{font-weight:600;letter-spacing:-.01em}
 </style>
 </head>
 <body>
@@ -818,20 +817,15 @@ body.cursor-active .cursor-glow{opacity:1}
   <section class="hero" aria-labelledby="hero-heading">
     <div class="hero-glow-1" aria-hidden="true"></div>
     <div class="hero-glow-2" aria-hidden="true"></div>
-    <div class="aurora" aria-hidden="true">
-      <div class="aurora-blob a" data-depth="0.06"></div>
-      <div class="aurora-blob b" data-depth="-0.04"></div>
-      <div class="aurora-blob c" data-depth="0.09"></div>
-    </div>
     <div class="hero-inner">
       <div>
         <div class="hero-badge"><div class="badge-dot" aria-hidden="true"></div>Now accepting new clients</div>
         <h1 class="hero-title" id="hero-heading">
-          <span class="lw-wrap"><span class="lw lw1">WEBSITES THAT</span></span>
-          <span class="lw-wrap"><span class="lw lw2 gold-line">GROW YOUR</span></span>
-          <span class="lw-wrap"><span class="lw lw3 white-line shimmer">BUSINESS.</span></span>
+          <span class="lw-wrap"><span class="lw lw1">Websites that</span></span>
+          <span class="lw-wrap"><span class="lw lw2 gold-line">grow your</span></span>
+          <span class="lw-wrap"><span class="lw lw3 white-line shimmer">business.</span></span>
         </h1>
-        <p class="hero-desc">Jake builds every site himself. He does the design, writes the code, and answers your emails. You get a fast, sharp website made for your business, and a person who picks up when you call.</p>
+        <p class="hero-desc">We build every site ourselves — the design, the code, and the support after launch. You get a fast, sharp website made for your business, and a real person who picks up when you call.</p>
         <div class="hero-actions">
           <a href="#" class="btn-p" onclick="navigate('contact');return false">Get Your Free Quote</a>
           <a href="#" class="btn-g" onclick="navigate('work');return false">See Our Work</a>
@@ -849,13 +843,6 @@ body.cursor-active .cursor-glow{opacity:1}
             <div class="mbtn-row"><div class="mbtn"></div><div class="mbtn ghost"></div></div>
           </div>
         </div>
-        <div class="hcard hcard-metrics">
-          <div class="metrics-label">Site Performance</div>
-          <div class="mbar-row"><div class="mbar-label"><span>Speed</span><span style="color:var(--accent)">98</span></div><div class="mbar-track"><div class="mbar-fill" style="width:98%"></div></div></div>
-          <div class="mbar-row"><div class="mbar-label"><span>SEO</span><span style="color:var(--accent)">95</span></div><div class="mbar-track"><div class="mbar-fill" style="width:95%;animation-delay:1.6s"></div></div></div>
-          <div class="mbar-row"><div class="mbar-label"><span>UX</span><span style="color:#fff">100</span></div><div class="mbar-track"><div class="mbar-fill" style="width:100%;animation-delay:1.72s;background:linear-gradient(90deg,var(--accent),#fff)"></div></div></div>
-        </div>
-        <div class="hcard-live"><div class="live-dot"></div>Live and Optimized</div>
       </div>
     </div>
     <div class="scroll-indicator" aria-hidden="true">
@@ -864,24 +851,17 @@ body.cursor-active .cursor-glow{opacity:1}
     </div>
   </section>
 
-  <div class="marquee-wrap" aria-hidden="true">
-    <div class="marquee-inner">
-      <span>Web Design</span><span class="acc">✦</span><span>Mobile Optimized</span><span class="accw">✦</span><span>SEO Ready</span><span class="acc">✦</span><span>Fast Load Times</span><span class="accw">✦</span><span>Google Analytics</span><span class="acc">✦</span><span>Contact Forms</span><span class="accw">✦</span><span>Custom Design</span><span class="acc">✦</span><span>Colorado Based</span><span class="accw">✦</span><span>Nationwide Clients</span><span class="acc">✦</span><span>Websites That Grow Your Business</span><span class="accw">✦</span>
-      <span>Web Design</span><span class="acc">✦</span><span>Mobile Optimized</span><span class="accw">✦</span><span>SEO Ready</span><span class="acc">✦</span><span>Fast Load Times</span><span class="accw">✦</span><span>Google Analytics</span><span class="acc">✦</span><span>Contact Forms</span><span class="accw">✦</span><span>Custom Design</span><span class="acc">✦</span><span>Colorado Based</span><span class="accw">✦</span><span>Nationwide Clients</span><span class="acc">✦</span><span>Websites That Grow Your Business</span><span class="accw">✦</span>
-    </div>
-  </div>
-
   <section class="diff-strip" aria-labelledby="diff-heading">
     <div class="diff-inner">
       <div class="section-tag rv">Why Huffman Web Design</div>
-      <h2 class="section-title rv" id="diff-heading">Built different,<br>by <em>design.</em></h2>
+      <h2 class="section-title rv" id="diff-heading">A simpler way<br>to get a <em>website.</em></h2>
       <div class="diff-grid">
         <div class="diff-card rv">
           <div class="diff-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
           </div>
-          <div class="diff-title">One person. Start to finish.</div>
-          <div class="diff-body">You work straight with the person writing your code. Jake takes the call, draws the design, and ships the build. Email him and Jake answers, often inside a few hours.</div>
+          <div class="diff-title">One team. Start to finish.</div>
+          <div class="diff-body">You work straight with the people who write your code. We take the call, design the site, and ship the build. Email us and a real person answers, often inside a few hours.</div>
         </div>
         <div class="diff-card rv" style="transition-delay:.1s">
           <div class="diff-icon" aria-hidden="true">
@@ -905,16 +885,15 @@ body.cursor-active .cursor-glow{opacity:1}
     <div class="stats-grid">
       <div class="stat-item rv"><div class="stat-num" data-count="97" data-suffix="%">97%</div><div class="stat-of">of consumers</div><div class="stat-desc">research a business online before making contact</div><div class="stat-src">Google Consumer Insights</div></div>
       <div class="stat-item rv" style="transition-delay:.1s"><div class="stat-num" data-count="75" data-suffix="%">75%</div><div class="stat-of">of people</div><div class="stat-desc">judge a company's credibility on website design alone</div><div class="stat-src">Stanford Web Credibility Research</div></div>
-      <div class="stat-item rv" style="transition-delay:.2s"><div class="stat-num">2.8B</div><div class="stat-of">local searches</div><div class="stat-desc">happen on Google every single day</div><div class="stat-src">Google Search Data</div></div>
-      <div class="stat-item rv" style="transition-delay:.3s"><div class="stat-num" data-count="40" data-suffix="%">40%</div><div class="stat-of">faster growth</div><div class="stat-desc">for businesses with a strong, professional online presence</div><div class="stat-src">Deloitte Small Business Report</div></div>
+      <div class="stat-item rv" style="transition-delay:.2s"><div class="stat-num" data-count="40" data-suffix="%">40%</div><div class="stat-of">faster growth</div><div class="stat-desc">for businesses with a strong, professional online presence</div><div class="stat-src">Deloitte Small Business Report</div></div>
     </div>
   </div>
 
   <div class="cta-bridge">
     <span class="cta-rule" aria-hidden="true"></span>
-    <div class="rv"><div class="section-tag" style="justify-content:center">The Real Cost of a Weak Website</div></div>
-    <h2 class="section-title rv" style="margin:.8rem 0 1.6rem">Your competitors are booking<br>jobs from their sites. <em>Is yours?</em></h2>
-    <p class="rv" style="color:var(--muted);font-size:1rem;line-height:1.88;max-width:580px;margin:0 auto 2.8rem;font-weight:300">A slow site, a dated look, or a name that never surfaces in local search quietly sends your customers to the competitor who shows up first. Good news: every one of those problems has a fix.</p>
+    <div class="rv"><div class="section-tag" style="justify-content:center">Why it matters</div></div>
+    <h2 class="section-title rv" style="margin:.8rem 0 1.6rem">A website that makes choosing you<br><em>the easy part.</em></h2>
+    <p class="rv" style="color:var(--muted);font-size:1rem;line-height:1.88;max-width:580px;margin:0 auto 2.8rem;font-weight:300">When your site is fast, clear, and easy to find, the right customers reach out without second-guessing. We handle the design, the code, and the upkeep, so it just works.</p>
     <div class="rv" style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
       <a href="#" class="btn-p" onclick="navigate('services');return false">See Pricing and Packages</a>
       <a href="#" class="btn-g" onclick="navigate('about');return false">About Huffman Web Design</a>
@@ -941,15 +920,15 @@ body.cursor-active .cursor-glow{opacity:1}
       <div class="section-tag rv">The Founder</div>
       <h1 class="section-title rv">Jake <em>Huffman</em></h1>
       <p class="about-tagline rv">"Good work, clear communication, and a site you're <strong>proud to send</strong> people to."</p>
-      <p class="about-body rv">Jake started Huffman Web Design after watching small businesses get handed bloated agency quotes for work that takes two weeks. He runs every project start to finish. You talk to the person who designs your site, writes its code, and ships it. That is the whole company.</p>
-      <p class="about-body rv" style="transition-delay:.1s">Jake played college football before he built websites. The habits carried over. He shows up, does the reps, and keeps his commitments to the people relying on him. Clients get that same discipline.</p>
+      <p class="about-body rv">Jake started Huffman Web Design after watching small businesses get handed bloated agency quotes for work that takes two weeks. Today we're a small, focused team that runs every project start to finish — you talk to the people who design your site, write its code, and ship it. No layers, no handoffs.</p>
+      <p class="about-body rv" style="transition-delay:.1s">Jake played college football before he built websites, and those habits run through the whole team: show up, do the reps, keep your commitments. Clients get that same discipline on every project.</p>
       <a href="#" class="btn-p rv" onclick="navigate('contact');return false" style="margin-top:.5rem">Start a Conversation</a>
     </div>
     <div class="rv-r">
       <div class="about-card">
         <div class="about-card-label">Huffman Web Design</div>
-        <div style="font-family:'Bebas Neue',sans-serif;font-size:1.9rem;color:var(--white);letter-spacing:.04em;margin-bottom:.4rem;line-height:1">Broomfield, Colorado</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:.95rem;color:rgba(0,0,0,.4);margin-bottom:1.5rem">Serving clients nationwide</div>
+        <div style="font-family:'Space Grotesk',sans-serif;font-size:1.9rem;color:var(--white);letter-spacing:.04em;margin-bottom:.4rem;line-height:1">Broomfield, Colorado</div>
+        <div style="font-family:'Space Grotesk',sans-serif;font-weight:300;font-size:.95rem;color:rgba(0,0,0,.4);margin-bottom:1.5rem">Serving clients nationwide</div>
         <div class="about-stats">
           <div class="about-stat-box"><div class="about-stat-n">3</div><div class="about-stat-l">Service tiers<br>for every budget</div></div>
           <div class="about-stat-box"><div class="about-stat-n">24h</div><div class="about-stat-l">Response time<br>guaranteed</div></div>
@@ -965,7 +944,7 @@ body.cursor-active .cursor-glow{opacity:1}
     <h2 class="section-title rv" style="margin:.6rem 0 2.8rem">How every project <em>gets built</em></h2>
     <div class="timeline">
       <div class="tl-item"><div class="tl-dot" aria-hidden="true"></div><div class="tl-label">The Foundation</div><div class="tl-title">Built on One Belief</div><div class="tl-body">Small businesses need clean, professional websites. They don't need six-month agency timelines or proposals stuffed with services they didn't ask for. Huffman Web Design exists because that gap was obvious.</div></div>
-      <div class="tl-item" style="transition-delay:.1s"><div class="tl-dot" aria-hidden="true"></div><div class="tl-label">The Standard</div><div class="tl-title">Nothing Ships Until It's Right</div><div class="tl-body">Before launch, Jake tests every site for load speed, mobile layout, and search indexing. Anything off gets fixed first. You should be able to hand someone your card, tell them to look you up, and trust what they find.</div></div>
+      <div class="tl-item" style="transition-delay:.1s"><div class="tl-dot" aria-hidden="true"></div><div class="tl-label">The Standard</div><div class="tl-title">Nothing Ships Until It's Right</div><div class="tl-body">Before launch, we test every site for load speed, mobile layout, and search indexing. Anything off gets fixed first. You should be able to hand someone your card, tell them to look you up, and trust what they find.</div></div>
       <div class="tl-item" style="transition-delay:.2s"><div class="tl-dot" aria-hidden="true"></div><div class="tl-label">The Process</div><div class="tl-title">Clear Deliverables at Every Stage</div><div class="tl-body">Every stage has a defined output. You review the design before coding starts. You see the built site before it goes live. Nothing moves forward without your sign-off.</div></div>
       <div class="tl-item" style="transition-delay:.3s;padding-bottom:0"><div class="tl-dot" aria-hidden="true"></div><div class="tl-label">Right Now</div><div class="tl-title">Accepting New Clients</div><div class="tl-body">New projects are open right now. If your business needs a site that looks credible, loads fast, and surfaces in search, this is a good time to start a conversation.</div></div>
     </div>
@@ -1034,7 +1013,7 @@ body.cursor-active .cursor-glow{opacity:1}
       <div class="work-info"><div class="work-tags"><span class="wtag">Landscaping</span><span class="wtag">HTML / CSS</span><span class="wtag">Design + Build</span></div><div class="work-name">Summit &amp; Stone</div><div class="work-desc">An editorial, magazine-style site for a Boulder landscape studio, with bold typography, full-bleed imagery, and a refined portfolio layout that lets the work breathe.</div></div>
     </div>
     <div class="work-card rv" style="transition-delay:.4s" onclick="navigate('contact')" role="button" tabindex="0" aria-label="Your project — get started" onkeydown="if(event.key==='Enter')navigate('contact')">
-      <div class="work-placeholder"><div style="font-family:'Bebas Neue',sans-serif;font-size:1.2rem;color:var(--dim);letter-spacing:.12em">Your Business</div><div class="work-overlay" aria-hidden="true"><div class="work-btn">Get Started</div></div></div>
+      <div class="work-placeholder"><div style="font-family:'Space Grotesk',sans-serif;font-size:1.2rem;color:var(--dim);letter-spacing:.12em">Your Business</div><div class="work-overlay" aria-hidden="true"><div class="work-btn">Get Started</div></div></div>
       <div class="work-info"><div class="work-tags"><span class="wtag">Your Industry</span></div><div class="work-name">Your Project Here</div><div class="work-desc">Ready to be the next project in the portfolio? Get in touch and let's build something together.</div></div>
     </div>
   </div>
@@ -1286,7 +1265,7 @@ body.cursor-active .cursor-glow{opacity:1}
     <div class="care-grid">
       <div class="care-card rv">
         <div class="plan-name" style="font-size:.95rem">Basic Care</div>
-        <div class="plan-price" style="font-size:1.35rem;margin:.55rem 0">$49 <span style="font-family:'Outfit',sans-serif;font-size:.76rem;font-weight:400;color:var(--dim);-webkit-text-fill-color:var(--dim)">per month</span></div>
+        <div class="plan-price" style="font-size:1.35rem;margin:.55rem 0">$49 <span style="font-family:'Space Grotesk',sans-serif;font-size:.76rem;font-weight:400;color:var(--dim);-webkit-text-fill-color:var(--dim)">per month</span></div>
         <ul class="plan-features">
           <li>Monthly content updates</li>
           <li>Uptime monitoring</li>
@@ -1297,7 +1276,7 @@ body.cursor-active .cursor-glow{opacity:1}
       <div class="care-card popular rv" style="transition-delay:.1s">
         <div class="plan-badge gold" aria-label="Best value plan">Best Value</div>
         <div class="plan-name" style="font-size:.95rem">Standard Care</div>
-        <div class="plan-price" style="font-size:1.35rem;margin:.55rem 0">$75 <span style="font-family:'Outfit',sans-serif;font-size:.76rem;font-weight:400;color:var(--dim);-webkit-text-fill-color:var(--dim)">per month</span></div>
+        <div class="plan-price" style="font-size:1.35rem;margin:.55rem 0">$75 <span style="font-family:'Space Grotesk',sans-serif;font-size:.76rem;font-weight:400;color:var(--dim);-webkit-text-fill-color:var(--dim)">per month</span></div>
         <ul class="plan-features">
           <li>Everything in Basic Care</li>
           <li>Performance optimization</li>
@@ -1308,7 +1287,7 @@ body.cursor-active .cursor-glow{opacity:1}
       </div>
       <div class="care-card pro-c rv" style="transition-delay:.2s">
         <div class="plan-name" style="font-size:.95rem;color:#c084fc">Pro Care</div>
-        <div class="plan-price" style="font-size:1.35rem;margin:.55rem 0;background:linear-gradient(135deg,#c084fc,#a855f7);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">$120 <span style="font-family:'Outfit',sans-serif;font-size:.76rem;font-weight:400;-webkit-text-fill-color:var(--dim)">per month</span></div>
+        <div class="plan-price" style="font-size:1.35rem;margin:.55rem 0;color:#8b5cf6">$120 <span style="font-family:'Space Grotesk',sans-serif;font-size:.76rem;font-weight:400;color:var(--dim)">per month</span></div>
         <ul class="plan-features">
           <li>Everything in Standard Care</li>
           <li>Weekly performance reviews</li>
@@ -1437,8 +1416,8 @@ body.cursor-active .cursor-glow{opacity:1}
   <div class="contact-hero">
     <div>
       <div class="section-tag rv">Get In Touch</div>
-      <h1 class="contact-headline rv">Let's build<br>something<br><em>worth sharing.</em></h1>
-      <p class="contact-promise rv">Send the form and you hear back within 24 hours. Jake reads every inquiry himself and replies with a straight quote and any questions he needs answered to price it right.</p>
+      <h1 class="contact-headline rv">Let's talk about<br>your <em>website.</em></h1>
+      <p class="contact-promise rv">Send the form and you hear back within 24 hours. We read every inquiry ourselves and reply with a straight quote and any questions we need answered to price it right.</p>
       <div class="contact-links-label rv">Reach out directly</div>
       <div class="contact-details rv">
         <a href="mailto:Huffmanwebdesign@gmail.com" class="cinfo-item">
@@ -1461,11 +1440,11 @@ body.cursor-active .cursor-glow{opacity:1}
         <div class="expect-steps">
           <div class="expect-step">
             <div class="expect-num" aria-hidden="true">1</div>
-            <div class="expect-text"><strong>You send the form.</strong> Tell Jake about your business and what you're after. The more detail, the faster the quote.</div>
+            <div class="expect-text"><strong>You send the form.</strong> Tell us about your business and what you're after. The more detail, the faster the quote.</div>
           </div>
           <div class="expect-step">
             <div class="expect-num" aria-hidden="true">2</div>
-            <div class="expect-text"><strong>Jake replies within 24 hours.</strong> A real response from the person who'll build the site, with a fixed quote and any questions.</div>
+            <div class="expect-text"><strong>We reply within 24 hours.</strong> A real response from the people who'll build the site, with a fixed quote and any questions.</div>
           </div>
           <div class="expect-step">
             <div class="expect-num" aria-hidden="true">3</div>
@@ -1481,7 +1460,7 @@ body.cursor-active .cursor-glow{opacity:1}
     <div class="reach-head rv">
       <div class="section-tag">Coverage</div>
       <h2>Built in Colorado.<br>Shipped <em>nationwide.</em></h2>
-      <p>Web work doesn't need a handshake across a desk. Jake builds and launches sites for businesses anywhere in the country, all of it handled over email, calls, and screen shares.</p>
+      <p>Web work doesn't need a handshake across a desk. We build and launch sites for businesses anywhere in the country, all of it handled over email, calls, and screen shares.</p>
     </div>
     <div class="reach-stage rv">
       <div class="reach-canvas-wrap">
@@ -1556,7 +1535,7 @@ body.cursor-active .cursor-glow{opacity:1}
 
       <div class="fgroup">
         <label for="cf-message">Project details</label>
-        <textarea id="cf-message" name="message" placeholder="Tell Jake about your business, what you need the site to do, and any examples of sites you like."></textarea>
+        <textarea id="cf-message" name="message" placeholder="Tell us about your business, what you need the site to do, and any examples of sites you like."></textarea>
         <div class="field-error">Please add a few details about your project.</div>
       </div>
 
@@ -1571,7 +1550,7 @@ body.cursor-active .cursor-glow{opacity:1}
         <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
       </div>
       <div class="success-title">Inquiry Sent</div>
-      <p class="success-body">Thanks — your message is on its way. Jake will get back to you within 24 hours, usually a lot sooner.</p>
+      <p class="success-body">Thanks — your message is on its way. We'll get back to you within 24 hours, usually a lot sooner.</p>
     </div>
   </div>
 
@@ -1589,7 +1568,7 @@ body.cursor-active .cursor-glow{opacity:1}
       </div>
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">Do I need to buy hosting and a domain separately?<svg class="faq-chevron" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
-        <div class="faq-a">You'll own your domain and hosting accounts directly, which keeps you in control of everything. Jake will walk you through exactly what to set up, or handle the setup with you on a call. Typical hosting for a small business site runs only a few dollars a month.</div>
+        <div class="faq-a">You'll own your domain and hosting accounts directly, which keeps you in control of everything. We'll walk you through exactly what to set up, or handle the setup with you on a call. Typical hosting for a small business site runs only a few dollars a month.</div>
       </div>
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">Can I make edits after the site launches?<svg class="faq-chevron" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
@@ -1938,7 +1917,7 @@ body.cursor-active .cursor-glow{opacity:1}
     }
     var msg = document.getElementById('cf-message');
     if(msg){
-      msg.value = "Hi Jake, I built this estimate on your site and would like a quote:\n\n" + lines.join('\n') + "\n\nA bit about my business: ";
+      msg.value = "Hi, I built this estimate on your site and would like a quote:\n\n" + lines.join('\n') + "\n\nA bit about my business: ";
     }
     navigate('contact');
     window.setTimeout(function(){
@@ -1983,7 +1962,7 @@ body.cursor-active .cursor-glow{opacity:1}
       e.preventDefault();
       errorBanner.classList.remove('visible');
       if(!validate()){
-        errorBanner.textContent = 'Please fill in the highlighted fields so Jake can get back to you.';
+        errorBanner.textContent = 'Please fill in the highlighted fields so we can get back to you.';
         errorBanner.classList.add('visible');
         var firstErr = form.querySelector('.fgroup.has-error input, .fgroup.has-error textarea');
         if(firstErr){ firstErr.focus(); }
